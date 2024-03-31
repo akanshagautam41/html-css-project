@@ -44,90 +44,8 @@ body{
     .text nav a:hover{
         color:orange;
     }
-header{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-header .logo{
-    padding: 5px 25px;
-}
 
-header nav a{
-    text-decoration: none;
-    color: white;
-    text-transform: capitalize;
-    padding: 5px 25px;
-
-    font-size: 20px;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-}
-header nav a:hover{
-    color:orange;
-}
-
-footer nav{
-width: 90%;
-font-size: 20px;
-text-align: center;
-padding-top: 20px;
-}
-nav a{
-padding: 20px;
-text-decoration: none;
-color: #6a6d73;
-}
-
-footer{
-margin-top: 20px;
-width: 100%;
-height: 40vh;
-display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
-background-color: black;
-}
-footer .frm{
-width: 30%;
-color: white;
-padding-top: 20px;
-
-}
-.frm input{
-width: 80%;
-padding: 10px;
-border: 5px solid sandybrown;
-text-align: center;
-font-size: 15px;
-margin-top: 10px;
-}
-.frm button{
-width: 30%;
-padding: 10px;
-margin-top: 5px;
-border: 2px solid sandybrown;
-}
-.social-icon{
-width: 25%;
-color: #6a6d73;
-font-size: 20px; 
-padding-top: 20px;
-}
-.social-icon a{
-padding: 8px;
-}
-
-.tt{
-width: 30%;
-color: #6a6d73;
-font-size: 20px;
-padding-top: 20px;
-}
+  
 .main-box{
 width: 100%;
 }
@@ -138,228 +56,122 @@ width: 100%;
 height: 60vh;
 color: aqua;
 }
-.about{
-width: 90%;
-height: 100%;
+.reservation{
+width: 100%;
 height: inherit;
 margin: 8% auto;
 padding: 20px ;
-border-radius: 20px;
 display: flex;
 justify-content: space-evenly;
-}
-.about .about-lft{
-width: 50%;
-
-}
-.about .about-lft .image{
-width: 90%;
-display: flex;
-justify-content: space-around; 
 flex-wrap: wrap;
 
 }
-.about-lft .image1{
-width: 50%;
-padding-bottom: 20px;
-transition: all .1sec linear;
+.reservation .reserv-lft{
+    width: 48%;
 }
-.about-lft .image1:hover{
-    transform: rotate(5deg);
-}
-.image1 img{
-width: 100%;
-}
-.about-lft .image2{
-width: 45%;
-transition: all .1sec linear;
-}
-.about-lft .image2:hover{
-    transform: rotate(5deg);
-}
-.image2 img{
-width: 100%;
-}
-.about-lft .image3{
-width: 45%;
-transition: all .1sec linear;
-}
-.about-lft .image3:hover{
-    transform: rotate(5deg);
-}
-.image3 img{
-width: 100%;
+ .reserv-lft video{
+    width: 100%;
 }
 
-.about-lft .image4{
-width: 50%;
-transition: all .1sec linear;
-}
-.about-lft .image4:hover{
-    transform: rotate(5deg);
-}
-.image4 img{
-width: 100%;
-}
-.about .about-rgt{
-width: 45%;
-
-}
-.about .about-rgt h1{
-    font-size: 36px;
-    color: black;
-    }
-    .about .about-rgt i{
-        color: sandybrown;
-        font-size: 40px;
-    }
-.about .about-rgt h5{
-font-size: 25px;
-padding: 10px;
-color: sandybrown;
-}
-.about .about-rgt p{
-font-size: 18px;
-padding: 10px;
-color: grey;
-}
-
-.about .about-rgt .ex{
-width: 90%;
-display: flex;
-justify-content: space-evenly;
-margin-top: 20px;
-}
-.ex .ex-lf{
+.reservation .reserv-rgt{
     width: 45%;
-   
-    
+    background-color: #010c21;
+    text-align: center;
+    padding: 20px;
 }
-.ex .ex-lf .txt-dsl{
-    width: 90%;
-    display: flex;
-    justify-content: space-evenly;
-    border-left: 6px solid sandybrown;
-    align-items: center;
-   
-}
-
-.txt-dsl .ex-txt-lft h1{
-   font-size: 50px;
+.reservation .reserv-rgt h6{
+    font-family: "Lucida Console", Courier, monospace;
     color: sandybrown;
-}
-.txt-dsl .ex-txt-rgt p{
     font-size: 20px;
-    
-    }
-
-.txt-dsl .ex-txt-rgt h6{
-text-transform: uppercase;
-
 }
-
-.ex .ex-rgt{
-    width: 45%;
+.reservation .reserv-rgt h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 40px;
     
 }
-.ex .ex-rgt .txt-dsl2{
-    width: 90%;
+
+.reservation .reserv-rgt .frm-tab{
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    border-left: 6px solid sandybrown;
     align-items: center;
- 
-   
+    flex-wrap: wrap;
 }
- .txt-dsl2 .ex-text-rgt h1{
-    width: 40%;
-    font-size: 50px;
-    color: sandybrown;
+.frm-tab .frm-tab-lgt{
+    width: 48%;
+}
+.frm-tab .frm-tab-lgt input{
+    width: 100%;
+}
+.frm-tab .frm-tab-rgt{
+    width: 48%;
+}
+.frm-tab .frm-tab-rgt input{
+    width: 100%;
+}
 
+.reservation .reserv-rgt .frm-tab2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
     
 }
-.txt-dsl2 .ex-text-lft p{
-    width: 50%;
-    font-size: 25px;
+.frm-tab2 .frm-tab2-lgt{
+    width: 48%;
 }
-
-
-
-.about-rgt .btn{
-width: 40%;
-padding: 20px;
-margin: 30px auto;
-font-size: 20px;
-background-color: sandybrown;
-border: 1px solid sandybrown;
-color: white;
+.frm-tab2 .frm-tab2-lgt input{
+    width: 100%;
 }
-.about-rgt .btn a{
-    color: whitesmoke;
+.frm-tab2 .frm-tab2-rgt{
+    width: 48%;
+    border: 4px solid sandybrown;
+    background-color: white;
+    margin-top: 10px;
+    text-align: start;
 }
-
+.frm-tab2 .frm-tab2-rgt select{
+    width: 80%;
+border: none;
+margin-left: 10px;
+}
+.frm-tab2 .frm-tab2-rgt label{
+   margin-left: 10px;
+}
+.reservation .reserv-rgt .frm-tab3 textarea{
+    width: 98%;
+    margin-top: 10px;
+    border: 4px solid sandybrown;
+    padding: 6%;
+}
+.reservation .reserv-rgt .frm-tab4 button{
+    width: 98%;
+    margin-top: 10px;
+    border: none;
+    background-color: orange;
+}
 @media screen and (max-width:780px){
-header{
-      flex-direction: column;
-      text-align: center;
+
+    .reservation{
+        width: 85%;
+        align-items: center;
+        flex-direction: row;
 
     }
-    .about{
-        width: 75%;
-        text-align: center;
+    .reservation .reserv-lft{
+width: 100%;
     }
-    footer{
-    flex-direction: column;
-    width: 90%;
-    align-items: center;
+    .reservation .reserv-rgt{
+        width: 100%;
+        margin-top: 20px;
+    }
     
-   }
-   footer nav{
-    width: 100%;
-    text-align: center;
-    margin: 2% 0%;
-   }
-   footer .social-icon{
-    width: 100%;
-    text-align: center;
-    margin: 2% 0%;
-   }
-   footer .tt{
-    width: 100%;
-    text-align: center;
-    margin: 2% 0%;
-   }
 }
 @media screen and (max-width:560px){
-header{
-      flex-direction: column;
-      text-align: center;
-
-    }
-    .about{
+    .reservation{
         width: 85%;
         text-align: center;
     }
-
-    footer{
-    flex-direction: column;
-    width: 90%;
-    align-items: center;
-    
-   }
-   footer nav{
-    width: 100%;
-    text-align: center;
-    margin: 2% 0%;
-   }
-   footer .social-icon{
-    width: 100%;
-    text-align: center;
-    margin: 2% 0%;
-   }
-   footer .tt{
-    width: 100%;
-    text-align: center;
-    margin: 2% 0%;
-   }
 }

@@ -44,90 +44,9 @@ body{
     .text nav a:hover{
         color:orange;
     }
-header{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
     
-}
-header .logo{
-    padding: 5px 25px;
-}
 
-header nav a{
-    text-decoration: none;
-    color: white;
-    text-transform: capitalize;
-    padding: 5px 25px;
-
-    font-size: 20px;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-}
-header nav a:hover{
-    color:orange;
-}
-
-footer nav{
-width: 90%;
-font-size: 20px;
-text-align: center;
-padding-top: 20px;
-}
-nav a{
-padding: 20px;
-text-decoration: none;
-color: #6a6d73;
-}
-
-footer{
-margin-top: 20px;
-width: 100%;
-height: 40vh;
-display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
-background-color: black;
-}
-footer .frm{
-width: 30%;
-color: white;
-padding-top: 20px;
-
-}
-.frm input{
-width: 80%;
-padding: 10px;
-border: 5px solid sandybrown;
-text-align: center;
-font-size: 15px;
-margin-top: 10px;
-}
-.frm button{
-width: 30%;
-padding: 10px;
-margin-top: 5px;
-border: 2px solid sandybrown;
-}
-.social-icon{
-width: 25%;
-color: #6a6d73;
-font-size: 20px; 
-padding-top: 20px;
-}
-.social-icon a{
-padding: 8px;
-}
-
-.tt{
-width: 30%;
-color: #6a6d73;
-font-size: 20px;
-padding-top: 20px;
-}
 .main-box{
 width: 100%;
 }
@@ -138,228 +57,312 @@ width: 100%;
 height: 60vh;
 color: aqua;
 }
-.about{
-width: 90%;
-height: 100%;
+.blog{
+width: 95%;
 height: inherit;
 margin: 8% auto;
 padding: 20px ;
 border-radius: 20px;
 display: flex;
 justify-content: space-evenly;
-}
-.about .about-lft{
-width: 50%;
-
-}
-.about .about-lft .image{
-width: 90%;
-display: flex;
-justify-content: space-around; 
 flex-wrap: wrap;
+background: sandybrown;
+
 
 }
-.about-lft .image1{
-width: 50%;
-padding-bottom: 20px;
-transition: all .1sec linear;
-}
-.about-lft .image1:hover{
-    transform: rotate(5deg);
-}
-.image1 img{
-width: 100%;
-}
-.about-lft .image2{
-width: 45%;
-transition: all .1sec linear;
-}
-.about-lft .image2:hover{
-    transform: rotate(5deg);
-}
-.image2 img{
-width: 100%;
-}
-.about-lft .image3{
-width: 45%;
-transition: all .1sec linear;
-}
-.about-lft .image3:hover{
-    transform: rotate(5deg);
-}
-.image3 img{
-width: 100%;
-}
 
-.about-lft .image4{
-width: 50%;
-transition: all .1sec linear;
-}
-.about-lft .image4:hover{
-    transform: rotate(5deg);
-}
-.image4 img{
-width: 100%;
-}
-.about .about-rgt{
-width: 45%;
-
-}
-.about .about-rgt h1{
-    font-size: 36px;
-    color: black;
-    }
-    .about .about-rgt i{
-        color: sandybrown;
-        font-size: 40px;
-    }
-.about .about-rgt h5{
-font-size: 25px;
-padding: 10px;
-color: sandybrown;
-}
-.about .about-rgt p{
-font-size: 18px;
-padding: 10px;
-color: grey;
-}
-
-.about .about-rgt .ex{
-width: 90%;
-display: flex;
-justify-content: space-evenly;
-margin-top: 20px;
-}
-.ex .ex-lf{
-    width: 45%;
+/* blog 1 start */
+.blog .blog-1{
+    width: 30%;
+    border: 2px solid grey;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px 0px;
    
-    
 }
-.ex .ex-lf .txt-dsl{
+.blog .blog-1 .blog-image{
     width: 90%;
-    display: flex;
-    justify-content: space-evenly;
-    border-left: 6px solid sandybrown;
-    align-items: center;
-   
+    margin: 15px;
 }
-
-.txt-dsl .ex-txt-lft h1{
-   font-size: 50px;
-    color: sandybrown;
+.blog .blog-1 .blog-image img{
+    width: 100%;
+    height: inherit;
 }
-.txt-dsl .ex-txt-rgt p{
-    font-size: 20px;
-    
-    }
-
-.txt-dsl .ex-txt-rgt h6{
-text-transform: uppercase;
-
-}
-
-.ex .ex-rgt{
-    width: 45%;
-    
-}
-.ex .ex-rgt .txt-dsl2{
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    border-left: 6px solid sandybrown;
-    align-items: center;
- 
-   
-}
- .txt-dsl2 .ex-text-rgt h1{
-    width: 40%;
-    font-size: 50px;
-    color: sandybrown;
-
-    
-}
-.txt-dsl2 .ex-text-lft p{
-    width: 50%;
+.blog .blog-1 h2{
     font-size: 25px;
+    text-align: center;
+}
+.blog .blog-1 p{
+    text-align: center;
+    font-size: 18px;
+    color: grey;
+}
+.blog .blog-1 p span{
+    font-size: 18px;
+    color: grey;
+    text-align: center;
+}
+.blog .blog-1 button{
+    align-items: center;
+    border: none;
+    background-color: #6a6d73;
+    color: white;
+    padding: 5px;
+}
+/* blog 1 end */
+/* blog 2 start */
+.blog .blog-2{
+    width: 30%;
+    border: 2px solid grey;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px 0px;
+   
+}
+.blog .blog-2 .blog-image{
+    width: 90%;
+    margin: 15px;
+}
+.blog .blog-2 .blog-image img{
+    width: 100%;
+    height: inherit;
+}
+.blog .blog-2 h2{
+    font-size: 25px;
+    text-align: center;
+}
+.blog .blog-2 p{
+    text-align: center;
+    font-size: 18px;
+    color: grey;
+}
+.blog .blog-2 p span{
+    font-size: 18px;
+    color: grey;
+    text-align: center;
+}
+.blog .blog-2 button{
+    align-items: center;
+    border: none;
+    background-color: #6a6d73;
+    color: white;
+    padding: 5px;
+}
+/* blog 2 end */
+/* blog 3 start */
+.blog .blog-3{
+    width: 30%;
+    border: 2px solid grey;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px 0px;
+   
+}
+.blog .blog-3 .blog-image{
+    width: 90%;
+    margin: 15px;
+}
+.blog .blog-3 .blog-image img{
+    width: 100%;
+    height: inherit;
+}
+.blog .blog-3 h2{
+    font-size: 25px;
+    text-align: center;
+}
+.blog .blog-3 p{
+    text-align: center;
+    font-size: 18px;
+    color: grey;
+}
+.blog .blog-3 p span{
+    font-size: 18px;
+    color: grey;
+    text-align: center;
+}
+.blog .blog-3 button{
+    align-items: center;
+    border: none;
+    background-color: #6a6d73;
+    color: white;
+    padding: 5px;
+}
+/* blog 3 end */
+/* 4 start */
+.blog .blog-4{
+    width: 30%;
+    border: 2px solid grey;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px 0px;
+   
+}
+.blog .blog-4 .blog-image{
+    width: 90%;
+    margin: 15px;
+}
+.blog .blog-4 .blog-image img{
+    width: 100%;
+    height: inherit;
+}
+.blog .blog-4 h2{
+    font-size: 25px;
+    text-align: center;
 }
 
-
-
-.about-rgt .btn{
-width: 40%;
-padding: 20px;
-margin: 30px auto;
-font-size: 20px;
-background-color: sandybrown;
-border: 1px solid sandybrown;
-color: white;
+.blog .blog-4 p{
+    text-align: center;
+    font-size: 18px;
+    color: grey;
 }
-.about-rgt .btn a{
-    color: whitesmoke;
+.blog .blog-4 p span{
+    font-size: 18px;
+    color: grey;
+    text-align: center;
 }
+.blog .blog-4 button{
+    align-items: center;
+    border: none;
+    background-color: #6a6d73;
+    color: white;
+    padding: 5px;
+}
+/* blog 4 end */
+
+/* blog 5 start */
+.blog .blog-5{
+    width: 30%;
+    border: 2px solid grey;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px 0px;
+   
+}
+.blog .blog-5 .blog-image{
+    width: 90%;
+    margin: 15px;
+}
+.blog .blog-5 .blog-image img{
+    width: 100%;
+    height: inherit;
+}
+.blog .blog-5 h2{
+    font-size: 25px;
+    text-align: center;
+}
+.blog .blog-5 p{
+    text-align: center;
+    font-size: 18px;
+    color: grey;
+}
+.blog .blog-5 p span{
+    font-size: 18px;
+    color: grey;
+    text-align: center;
+}
+.blog .blog-5 button{
+    align-items: center;
+    border: none;
+    background-color: #6a6d73;
+    color: white;
+    padding: 5px;
+}
+/* blog 5 end */
+/* blog 6 start */
+.blog .blog-6{
+    width: 30%;
+    border: 2px solid grey;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px 0px;
+   
+}
+.blog .blog-6 .blog-image{
+    width: 90%;
+    margin: 15px;
+}
+.blog .blog-6 .blog-image img{
+    width: 100%;
+    height: inherit;
+}
+.blog .blog-6 h2{
+    font-size: 25px;
+    text-align: center;
+}
+.blog .blog-6 p{
+    text-align: center;
+    font-size: 18px;
+    color: grey;
+}
+.blog .blog-6 p span{
+    font-size: 18px;
+    color: grey;
+    text-align: center;
+}
+.blog .blog-6 button{
+    align-items: center;
+    border: none;
+    background-color: #6a6d73;
+    color: white;
+    padding: 5px;
+}
+/* blog 6 end */
+
+#more {display: none;}
 
 @media screen and (max-width:780px){
-header{
-      flex-direction: column;
-      text-align: center;
 
+    .blog{
+        width: 90%;
+        flex-direction: row;
+        align-items: center;
     }
-    .about{
-        width: 75%;
-        text-align: center;
+    .blog .blog-1{
+        width: 48%;
+        display: flex;
+        flex-wrap: wrap;
     }
-    footer{
-    flex-direction: column;
-    width: 90%;
-    align-items: center;
+    .blog .blog-2{
+        width: 48%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .blog .blog-3{
+        width: 48%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .blog .blog-4{
+        width: 48%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .blog .blog-5{
+        width: 48%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .blog .blog-6{
+        width: 48%;
+        display: flex;
+        flex-wrap: wrap;
+    }
     
-   }
-   footer nav{
-    width: 100%;
-    text-align: center;
-    margin: 2% 0%;
-   }
-   footer .social-icon{
-    width: 100%;
-    text-align: center;
-    margin: 2% 0%;
-   }
-   footer .tt{
-    width: 100%;
-    text-align: center;
-    margin: 2% 0%;
-   }
+    
 }
 @media screen and (max-width:560px){
-header{
-      flex-direction: column;
-      text-align: center;
 
-    }
-    .about{
+    
+    .menu{
         width: 85%;
         text-align: center;
     }
 
-    footer{
-    flex-direction: column;
-    width: 90%;
-    align-items: center;
     
-   }
-   footer nav{
-    width: 100%;
-    text-align: center;
-    margin: 2% 0%;
-   }
-   footer .social-icon{
-    width: 100%;
-    text-align: center;
-    margin: 2% 0%;
-   }
-   footer .tt{
-    width: 100%;
-    text-align: center;
-    margin: 2% 0%;
-   }
 }

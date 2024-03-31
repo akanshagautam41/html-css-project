@@ -20,6 +20,7 @@ body{
     width: 100%;
     background-color: rgba(0,0,0,0.6);
     position: absolute;
+   
 }
 
 .banner .text{
@@ -44,96 +45,7 @@ body{
     .text nav a:hover{
         color:orange;
     }
-header{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-header .logo{
-    padding: 5px 25px;
-}
 
-header nav a{
-    text-decoration: none;
-    color: white;
-    text-transform: capitalize;
-    padding: 5px 25px;
-
-    font-size: 20px;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-}
-header nav a:hover{
-    color:orange;
-}
-
-footer nav{
-width: 90%;
-font-size: 20px;
-text-align: center;
-padding-top: 20px;
-}
-nav a{
-padding: 20px;
-text-decoration: none;
-color: #6a6d73;
-}
-
-footer{
-margin-top: 20px;
-width: 100%;
-height: 40vh;
-display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
-background-color: black;
-}
-footer .frm{
-width: 30%;
-color: white;
-padding-top: 20px;
-
-}
-.frm h2{
-    color:gray;
-}
-.frm input{
-width: 80%;
-padding: 10px;
-border: 5px solid sandybrown;
-text-align: center;
-font-size: 15px;
-margin-top: 10px;
-}
-.frm button{
-width: 30%;
-padding: 10px;
-margin-top: 5px;
-border: 2px solid sandybrown;
-}
-.social-icon{
-width: 25%;
-color: #6a6d73;
-font-size: 20px; 
-padding-top: 20px;
-}
-.social-icon a{
-padding: 8px;
-}
-
-.tt{
-width: 30%;
-color: #6a6d73;
-font-size: 20px;
-padding-top: 20px;
-}
-.main-box{
-width: 100%;
-}
 
 .main-box .con{
 background-color: #26498e;
@@ -144,7 +56,7 @@ color: aqua;
 .menu{
 width: 90%;
 height: inherit;
-margin: 8% auto;
+margin: 2% auto;
 padding: 20px ;
 text-align: center;
 }
@@ -164,96 +76,216 @@ text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .menu .menu-list{
-    width: 50%;
+    width: 95%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    text-align: center;
-    margin: 20px auto;
+   margin-top: 30px;
+   flex-wrap: wrap;
+   
+border-bottom: 2px solid grey;
 }
 .mn-list i{
     color: sandybrown;
     font-size: 50px;
 }
 .mn-list p{
-    margin-bottom: 0rem;
+    margin-bottom: 0%;
 }
+
 .mn-list2 i{
     color: sandybrown;
     font-size: 50px;
 }
 .mn-list2 p{
-    margin-bottom: 0rem;
+    margin-bottom: 0%;
+    
 }
+
 .mn-list3 i{
     color: sandybrown;
     font-size: 50px;
 }
 .mn-list3 p{
-    margin-bottom: 0rem;
+    margin-bottom: 0%;
+   
 }
-@media screen and (max-width:780px){
-header{
-      flex-direction: column;
-      text-align: center;
 
-    }
-    .menu{
-        width: 75%;
-        text-align: center;
-    }
-    footer{
-    flex-direction: column;
+.food{
     width: 90%;
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-evenly;
     align-items: center;
-    
-   }
-   footer nav{
-    width: 100%;
-    text-align: center;
-    margin: 2% 0%;
-   }
-   footer .social-icon{
-    width: 100%;
-    text-align: center;
-    margin: 2% 0%;
-   }
-   footer .tt{
-    width: 100%;
-    text-align: center;
-    margin: 2% 0%;
-   }
+    flex-wrap: wrap;
 }
-@media screen and (max-width:560px){
-header{
-      flex-direction: column;
-      text-align: center;
 
-    }
-    .menu{
-        width: 85%;
-        text-align: center;
-    }
+.food .food-lft{
+    width: 46%;
+    
+}
 
-    footer{
-    flex-direction: column;
+.food .food-lft .food-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 6%;
+    flex-wrap: wrap;
+   
+}
+.food-lft .food-list .food-img{
+    width: 25%;
+   
+}
+.food-img img{
+    width: 70%;
+    height: 18vh;
+    border-radius: 10px;
+}
+.food-lft .food-list .food-text{
+    width: 75%;
+    
+}
+.food-text .burger{
     width: 90%;
-    align-items: center;
-    
-   }
-   footer nav{
-    width: 100%;
-    text-align: center;
-    margin: 2% 0%;
-   }
-   footer .social-icon{
-    width: 100%;
-    text-align: center;
-    margin: 2% 0%;
-   }
-   footer .tt{
-    width: 100%;
-    text-align: center;
-    margin: 2% 0%;
-   }
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
 }
+.burger .bur-name{
+    width: 65%;
+}
+.burger .bur-name h6{
+    font-size: 22px;
+}
+.burger .bur-price{
+    width: 35%;
+    
+}
+.burger .bur-price h6{
+    color: sandybrown;
+    text-align: end;
+    font-size: 20px;
+    
+}
+.food .food-rgt{
+    width: 46%;
+    
+}
+.food .food-rgt .food-list2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 6%;
+    flex-wrap: wrap;
+ 
+}
+.food-rgt .food-list2 .food2-img{
+    width: 25%;
+}
+.food2-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+.food-rgt .food-list2 .food2-text{
+    width: 75%;
+    
+}
+.food2-text .burger2{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.burger2 .bur-name2{
+    width: 65%;
+}
+.burger2 .bur-name2 h6{
+    font-size: 22px;
+}
+.burger2 .bur-price2{
+    width: 35%;
+    
+}
+.burger2 .bur-price2 h6{
+    color: sandybrown;
+    text-align: end;
+    font-size: 20px;
+    
+}
+
+    @media screen and (max-width:780px){
+
+        .menu{
+            width: 75%;
+            text-align: center;
+        }
+        .menu .menu-text{
+            width: 100%;
+            text-align: center;
+        }
+        .menu .menu-list{
+            width: 100%;
+                text-align: center;
+        }
+        .food{
+            width: 75%;
+            flex-direction: row;
+            align-items: center;
+        }
+        .food .food-lft{
+            width: 100%;
+        }
+        .food .food-lft img{
+            width: 80%;
+            height: 18vh;
+        }
+        .food .food-rgt{
+            width: 100%;
+             }
+        .food .food-rgt img{
+            width: 80%;
+    height: 18vh;
+        }
+        
+    }
+    @media screen and (max-width:560px){
+        .menu{
+            width: 75%;
+            text-align: center;
+        }
+        .menu .menu-text{
+            width: 100%;
+            text-align: center;
+        }
+        .menu .menu-list{
+            width: 100%;
+                text-align: center;
+        }
+        .food{
+            width: 75%;
+            flex-direction: row;
+            align-items: center;
+        }
+        .food .food-lft{
+            width: 100%;
+        }
+        .food .food-lft img{
+            width: 80%;
+            height: 18vh;
+        }
+        .food .food-rgt{
+            width: 100%;
+             }
+        .food .food-rgt img{
+            width: 80%;
+    height: 18vh;
+        }
+    
+        
+    }

@@ -21,6 +21,7 @@ body{
     position: absolute;
 }
 
+/* header part start */
 header{
     width: 100%;
     position: absolute;
@@ -28,14 +29,33 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+}
+header .logo{
     padding: 5px 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+header span{
+    position: absolute;
+    right: 6px;
+    border: 5px solid grey;
+    border-radius: 5px;
+    top: 1px;
+    margin: 10px;
+    padding: 5px 10px;
+    
+}
+#menu{
+    padding-top: 10px;
 }
 
 header nav a{
     text-decoration: none;
     color: white;
     text-transform: capitalize;
-    padding-left: 15px;
+    padding: 5px 25px;
+
     font-size: 20px;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
@@ -43,6 +63,25 @@ header nav a{
 header nav a:hover{
     color:orange;
 }
+
+.clr{
+    color: white;
+}
+.nw{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: black;
+    /* color: red !important; */
+    z-index: 45;
+}
+span{
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    display: none;
+}
+/* header part end */
 
 .data{
     color: white;
@@ -79,15 +118,48 @@ border: none;
     text-transform: uppercase;
 }
 
-@media screen and (max-width:760px) {
-    header{
-      flex-direction: column;
-      text-align: center;
+.hide{
+    display: block;
+   }
 
+@media screen and (max-width:760px) {
+     header{
+      flex-direction: column;
+      align-items: start;
+      
+} 
+    
+   header span{
+        display: block !important;
+        display: flex;
+        align-self: flex-end;
+      
+}
+    /* .logo{
+        display: none;
+    } */
+    
+   header nav{
+        display: none;
+        align-self: flex-end;
+        padding: 0;
+        
     }
+   header  nav a{
+        display: flex !important;
+        flex-direction: row;
+        color:white;
+        font-size: 18px;
+    } 
+    
+
     .data{
-        width: 65%;
+        width: 45%;
         bottom: 5%;
+       
+    }
+    .data p{
+        font-size: 12px;
     }
     .box{
         width: 100%;
@@ -121,14 +193,40 @@ border: none;
 
 @media screen and (max-width:560px) {
     header{
-      flex-direction: column;
-      text-align: center;
-
-    }
+        flex-direction: column;
+        align-items: start;
+        
+  } 
+      
+     header span{
+          display: block !important;
+          display: flex;
+          align-self: flex-end;
+        
+  }
+      /* .logo{
+          display: none;
+      } */
+      
+     header nav{
+          display: none;
+          align-self: flex-end;
+          padding: 0;
+          
+      }
+     header  nav a{
+          display: flex !important;
+          flex-direction: row;
+          color:white;
+          font-size: 12px;
+      } 
+    
     .data{
-        width: 65%;
+        width: 45%;
         bottom: 5%;
+       
     }
+   
     .box{
         width: 100%;
         flex-direction: column;
@@ -396,63 +494,81 @@ padding-top: 20px;
 line-height: 30px;
 font-size: 14px;
 }
+
+
+/* footer css start */
 footer nav{
-width: 90%;
-font-size: 20px;
-text-align: center;
-
-}
-nav a{
-padding: 20px;
-text-decoration: none;
-color: #6a6d73;
-}
-
-footer{
-width: 100%;
-height: 40vh;
-display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
-
-}
-footer .frm{
-width: 30%;
-color: white;
-padding-top: 20px;
-
-}
-.frm input{
-width: 80%;
-padding: 10px;
-border: 5px solid salmon;
-text-align: center;
-font-size: 15px;
-margin-top: 10px;
-}
-.frm button{
-width: 30%;
-padding: 10px;
-margin-top: 5px;
-background-color: aqua;
-border: 2px solid salmon;
-}
-.social-icon{
-width: 25%;
-color: #6a6d73;
-font-size: 20px; 
-padding-top: 25px;
-}
-.social-icon a{
-padding: 8px;
-}
-
-.tt{
-width: 30%;
-color: #6a6d73;
-font-size: 20px;
-padding-top: 20px;
-}
+    width: 90%;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    }
+    nav a{
+    padding: 20px;
+    text-decoration: none;
+    color: #6a6d73;
+    }
+    
+    footer{
+    margin-top: 20px;
+    width: 100%;
+    /* height: 40vh; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: black;
+    }
+    footer .frm{
+    width: 30%;
+    color: white;
+    padding-top: 20px;
+    
+    }
+    .frm h2{
+        color: grey;
+    }
+    .frm input{
+    width: 80%;
+    padding: 10px;
+    border: 5px solid sandybrown;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    
+    }
+    .frm button{
+    width: 30%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid sandybrown;
+    }
+    .social-icon{
+    width: 25%;
+    color: #6a6d73;
+    font-size: 20px; 
+    padding-top: 20px;
+    }
+    .social-icon a{
+    padding: 8px;
+    }
+    
+    .tt{
+    width: 30%;
+    color: #6a6d73;
+    font-size: 20px;
+    padding-top: 20px;
+    }
+    
+    .arrow{
+        width: 5%;
+    }
+    .arrow i{
+        width: 100%;
+        color: black;
+        font-size: 35px;
+      
+    }
+    /* footer css end */
 @media screen and (max-width:760px){
 .lunch{
 flex-direction: column;
@@ -497,25 +613,34 @@ text-align: center;
    footer nav{
     width: 100%;
     text-align: center;
-    margin: 2% 0%;
+    margin: 3% 0%;
    }
    footer .social-icon{
-    width: 100%;
+    width: 50%;
+    text-align: center;
+    margin: 2% 0%;
+    
+    
+   }
+   footer .tt{
+    width: 50%;
     text-align: center;
     margin: 2% 0%;
    }
-   footer .tt{
-    width: 100%;
-    text-align: center;
+   footer .frm{
+    width: 50%;
+   text-align: center;
+   margin: 2% 0%;
+   }
+   footer .arrow{
     margin: 2% 0%;
    }
 }
 
    @media screen and (max-width:560px){
 .lunch{
-flex-direction: column;
-width: 100%;
-text-align: center;
+flex-direction: column; 
+width: 100%; 
 }
 .main{
         width: 100%;
@@ -547,25 +672,35 @@ text-align: center;
     margin: 2% 0%;
    }
    footer{
-    flex-direction: column;
-    width: 90%;
+    display: flex;
+    flex-direction: column !important;
+    width: 100%;
     align-items: center;
     
    }
-   footer nav{
+   footer .social-icon{
+width: 100%;
+    text-align: center;
+    margin: 0;
+    
+   }
+   /* footer nav{
     width: 100%;
     text-align: center;
-    margin: 2% 0%;
+    margin: 3% 0%;
    }
    footer .social-icon{
-    width: 100%;
+    width: 50%;
     text-align: center;
-    margin: 2% 0%;
    }
    footer .tt{
-    width: 100%;
+    width: 50%;
     text-align: center;
-    margin: 2% 0%;
+   }
+   footer .frm{
+    width: 50%;
+   text-align: center; 
+
    }
 
 }
@@ -575,4 +710,5 @@ color:whitesmoke;
 }
 nav a:hover{
 color: #b5bcc7;
-}
+}*/
+   }
